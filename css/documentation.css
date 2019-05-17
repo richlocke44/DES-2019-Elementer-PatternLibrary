@@ -25,7 +25,7 @@ html {
   
 }
 .row{
-    float: left;
+    
     margin: 0 auto;
 }
 .top-nav{
@@ -114,9 +114,11 @@ html {
     width: 100%;
     position: absolute;
     left: 0;
+    float: left;
 }
 .toprow{
-    height: 200px
+    height: 200px;
+    float:left;
 }
 .intro-box{
     padding-left: 40px;
