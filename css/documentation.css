@@ -1,0 +1,223 @@
+html {
+  box-sizing: border-box; 
+    
+}
+* {
+  box-sizing: border-box;
+}
+  
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+  
+}
+.row{
+    float: left;
+    margin: 0 auto;
+}
+.top-nav{
+    height:50px;
+    background-color: #FF2626;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-family: sans-serif;
+}
+.top-logo{
+    font-size: 40px;
+    color: white;
+    margin-left: 10px;
+    
+}
+.top-nav a {
+  text-decoration: none;
+}
+
+
+.topnav-itm{
+    margin-left: 20px;
+    color: lightgrey;
+    font-size: 18px;
+    
+}
+.topnav-itm:hover{
+    color: white;
+}
+
+.logo{
+    width: 100%;
+    
+    
+}
+.title{
+    
+    color:#FF2626;
+    font-size: 60px;
+    font-family: sans-serif;
+}.intro{
+    font-family: sans-serif;
+}
+.getstarted-btn, .download-btn{
+    text-decoration: none;
+    
+    font-family: sans-serif;
+    font-size: 22px;
+    height: 45px;
+    width: 35%;
+    text-align: center;
+    padding-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    
+}
+.getstarted-btn{
+    float: right;
+    border-color: grey;
+    color:grey;
+}
+.getstarted-btn:hover{
+    background-color: grey;
+    color:white;
+}
+.download-btn{
+    float: left;
+    color:#FF2626;
+}
+.download-btn:hover{
+    background-color:#FF2626;
+    color: white;
+}
+#container{
+    width: 100%;
+    height: auto;
+    
+}
+.row1{
+    margin-top: 200px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.toprow{
+    height: 200px
+}
+.intro-box{
+    padding-left: 40px;
+}
+.one, .two{
+    background-color: black;
+    height:40px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: grey;
+  overflow-x: hidden;
+  padding-top: 20px;
+  top:50px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #FF2626;
+}
+.sidenav a:active{
+    color: #FF2626;
+}
+
+.main {
+  margin-left: 200px;
+  font-size: 20px; 
+  padding: 0px 10px;
+}
+
+
+.active {
+  background-color: grey;
+  color: white;
+}
+
+
+.dropdown-container {
+  display: none;
+  
+  padding-left: 8px;
+}
+
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.getrow1{
+    width: 80%;
+    position: absolute;
+    left: 240px;
+    top:80px;
+    
+}
+.getrow1 h1{
+    color: #FF2626;
+}
+.getrow1 h2{
+    color: grey;
+}
+.code-block{
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    line-height: 25px;
+    max-width: 1100px;
+}
+.section{
+    width:100%;
+    max-width: 1200px;
+    border-bottom-color: #ff2626;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}

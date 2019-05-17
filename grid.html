@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+        <link rel="stylesheet" href="css/elementer.css" type="text/css" />
+        <link rel="stylesheet" href="css/documentation.css" type="text/css" />
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <title>Grid System</title>
+    </head>
+    <body>
+        
+        <div id="container">
+            
+                <div class="row toprow">
+               <div class="col-12 top-nav">
+                    <a class="top-logo" href="index.html">Elementer</a>
+                    <a class="topnav-itm" href="index.html">Home</a>
+                    <a class="topnav-itm" href="getstarted.html">Documentation</a>
+                </div> 
+                </div>
+                
+                <div class="sidenav">
+                  <a href="#about">Get Started</a>
+                  <button class="dropdown-btn">Components 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-container">
+                    <a href="header.html">Header</a>
+                    <a href="navigation.html">Navigation</a>
+                    <a href="grid.html">Grid system</a>
+                    <a href="buttons.html">Buttons</a>
+                    <a href="collapse.html">Collapse</a>
+                    <a href="jumbotron.html">Jumbotron</a>
+                    <a href="footer.html">Footer</a>
+                  </div>
+                  
+                </div>
+                <div class="row getrow1">
+                    <div class="col-12">
+                    <div class="section">
+                    <h1>Grid System</h1>
+                    <p></p>
+                </div>
+                
+                <div class="section">
+                    <h2>Introduction</h2>
+                    <p></p>
+                    
+                
+                </div>
+                    
+                    <div class="section">
+                    <h2>Structure</h2>
+                    
+                    <h3>Container</h3>
+                    <p>The container is not strictly part of the grid but it provides good structure to your website. 
+                    It is most commonly used for body content as it is useful in centering your content. 
+                    The .container class is set to a maximum with of 70%.</p>
+                    <code class="code-block">
+                        &lt;body&gt;<br>
+                        &lt;div class="container"&gt;&lt;/div&gt;<br>
+                        &lt;/body&gt;
+                        </code>
+                    <h3>Row</h3>
+                        <code class="code-block">
+                        &lt;body&gt;<br>
+                        &lt;div class="container"&gt;<br>
+                        &lt;div class="row"&gt;<br>
+                        &lt;!--Insert columns here--&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/body&gt;
+                        </code>
+                
+                    <p></p>
+                    
+                </div>
+                
+                <div class="section">
+                    <h2>Columns</h2>
+                    
+                    <h3>Box-Sizing</h3>
+                        <code class="code-block">
+                        *{ <br>
+                              box-sizing: border-box;<br>
+                        }
+                        </code>
+                    <h3>Column widths</h3>
+                        <code class="code-block">
+                        .col-1 {width: 8.33%;}<br>
+                        .col-2 {width: 16.66%;}<br>
+                        .col-3 {width: 25%;}<br>
+                        .col-4 {width: 33.33%;}<br>
+                        .col-5 {width: 41.66%;}<br>
+                        .col-6 {width: 50%;}<br>
+                        .col-7 {width: 58.33%;}<br>
+                        .col-8 {width: 66.66%;}<br>
+                        .col-9 {width: 75%;}<br>
+                        .col-10 {width: 83.33%;}<br>
+                        .col-11 {width: 91.66%;}<br>
+                        .col-12 {width: 100%;}<br>
+                        </code>
+                    <h3>Two Columns</h3>
+                    <img src="images/12_column_grid_example_2_gold.gif" style="margin:0 auto;"></img>
+                    <h4></h4>
+                        <code class="code-block">
+                            &lt;body&gt;<br>
+                            &lt;div class="container"&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-11"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-2"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-10"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-3"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-9"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-4"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-8"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-5"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-7"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-6"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-6"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/body&gt;
+                            
+                        </code>
+                        
+                        <h3>Multiple Columns</h3>
+                    <img src="images/12_column_grid_gold.gif" style="margin:0 auto;"></img>
+                    <h4></h4>
+                        <code class="code-block">
+                            &lt;body&gt;<br>
+                            &lt;div class="container"&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-12"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-6"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-6"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-4"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-4"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-4"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-3"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-3"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-3"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-3"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-2"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-2"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-2"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-2"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-2"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-2"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="row"&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;div class="col-1"&gt;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/body&gt;
+                            
+                        </code>
+                    <p></p>
+                    
+                </div>
+                
+            
+                </div>     
+                    
+                </div>
+                
+           
+            
+       <script type="text/javascript" src="js/documentation.js"></script>
+       <script type="text/javascript" src="js/elementer.js"></script>
+    </body>
+</html>

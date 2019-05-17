@@ -1,0 +1,141 @@
+/*---------------------------- Automatic Slideshow Header -------------------------------*/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*---------------------------- Responsive Navigation Menu -------------------------------*/
+.RsvNav {
+  overflow: hidden;
+  background-color: #ff2626;
+}
+.links{
+    margin: 0 auto;
+    width: 300px;
+}
+.RsvNav a {
+  margin:0 auto;
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.RsvNav a:hover {
+  background-color: white;
+  color: #ff2626;
+}
+
+.RsvNav a:active {
+  background-color:white;
+  color: #ff2626;
+}
+
+.RsvNav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .RsvNav a:not(:first-child) {display: none;}
+  .RsvNav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .RsvNav.responsive {position: relative;}
+  .RsvNav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .RsvNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*---------------------------- Buttons -------------------------------*/
+
+.btn {
+  
+  outline: none;
+  cursor: pointer;
+  padding:10px ;
+  font-size: 18px;
+  background-color: transparent;
+  color: darkgrey;
+  font-family: "sans-serif";
+  border: solid 1px darkgrey;
+  border-radius: 5px;
+  transition: all .3s ease-in-out; }
+  .btn:hover {
+    border-color: grey;
+    color: grey; }
+  .btn.raised {
+    box-shadow: 0px 2px 2px grey; }
