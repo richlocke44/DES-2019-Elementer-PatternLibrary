@@ -230,3 +230,77 @@ img {vertical-align: middle;}
       background-color: forestgreen;
       border-color: transparent;
       color: white; }
+      
+ /*---------------------------- Collapse -------------------------------*/     
+ 
+ .collapsible-wrapper {
+  margin-bottom: 0px;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lable-toggle {
+  display: block;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  background-color: #ff2626;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+  border-width: 1px;
+  border-style:solid;
+  border-color: transparent;
+  
+}
+
+.lable-toggle:hover {
+  color: #ff2626;
+  background-color: white;
+  border-color: #ff2626;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.lable-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: 10px;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lable-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lable-toggle + .collapsible-content {
+  max-height: 350px;
+}
+
+.toggle:checked + .lable-toggle {
+  color: #ff2626;
+  background-color: white;
+  border-color: #ff2626;
+  border-style: solid;
+  border-width: 1px;
+  
+}
+
+.collapsible-content .content-inner {
+  background-color: lightgrey;
+  padding:10px ;
+}
